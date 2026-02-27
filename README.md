@@ -1,4 +1,4 @@
-# 🦑 Squid Agent  - dont use this yet working on it @Ghost081280 I'll fork over when complete today is Feb 27 2026
+# 🦑 Squid Agent  - dont use this yet working on it @Ghost081280
 
 Your own AI agent — memory, tools, and channels out of the box. Deploy to Railway in 5 minutes. You own everything.
 
