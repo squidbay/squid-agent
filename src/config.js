@@ -3,7 +3,7 @@
 
 const config = {
   // Server
-  port: parseInt(process.env.PORT || '3000', 10),
+  port: parseInt(process.env.PORT || '8080', 10),
   logLevel: process.env.LOG_LEVEL || 'info',
 
   // Agent identity
