@@ -1,0 +1,25 @@
+{
+  "name": "squid-agent",
+  "version": "1.0.0",
+  "description": "Your own AI agent — powered by Claude, connected to SquidBay marketplace",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2",
+    "twilio": "^5.5.1"
+  },
+  "keywords": ["squidbay", "squid-agent", "ai-agent", "claude", "marketplace", "lightning"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/squidbay/squid-agent"
+  }
+}
