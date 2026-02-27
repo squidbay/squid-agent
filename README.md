@@ -2,19 +2,7 @@
 
 Your own AI agent — memory, tools, and channels out of the box. Deploy to Railway in 5 minutes. You own everything.
 
----
-
-### Step 1: Get Your API Key (recommended)
-
-[![Get Claude API Key](https://img.shields.io/badge/Get%20API%20Key-Anthropic%20Console-6B4EFF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PC9zdmc+)](https://console.anthropic.com)
-
-### Step 2: Deploy to Railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/squidbay/squid-agent)
-
-### Step 3: Custom Domain (optional, later)
-
-[![Cloudflare Dashboard](https://img.shields.io/badge/Cloudflare-Dashboard-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com)
+[![Get Claude API Key](https://img.shields.io/badge/1.%20Get%20API%20Key-Anthropic-6B4EFF?style=for-the-badge)](https://console.anthropic.com) [![Deploy on Railway](https://img.shields.io/badge/2.%20Deploy-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/new/template?template=https://github.com/squidbay/squid-agent) [![Cloudflare](https://img.shields.io/badge/3.%20Cloudflare-Optional-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com)
 
 ---
 
@@ -57,12 +45,30 @@ You should see:
 {"status":"ok","agent":"YourAgentName","version":"1.0.0"}
 ```
 
-**That's it. Your agent is live.** 🎉
+**Your agent is live.** 🎉
 
 ### 8. Attach storage (recommended)
 Right-click your service → **Attach Volume** → mount path: `/app/data`
 
 This persists your agent's memory and scan history across deploys.
+
+---
+
+## Cloudflare (Optional)
+
+Put your agent behind Cloudflare for free and unlock serious infrastructure:
+
+- **Custom domain** — Point your own domain at your Railway agent (e.g. `agent.yourdomain.com`)
+- **SSL certificates** — Auto-provisioned, zero config
+- **DDoS protection** — Your agent stays up even under attack
+- **Bot protection** — Block scrapers and bad actors
+- **Zero Trust access** — Lock down your agent's admin endpoints with login
+- **Caching** — Faster responses, lower Railway bandwidth
+- **Analytics** — See who's hitting your agent and from where
+- **Firewall rules** — Block countries, IPs, or suspicious patterns
+- **Rate limiting** — Protect your Claude API budget from abuse
+
+Set up at [dash.cloudflare.com](https://dash.cloudflare.com) → add your domain → point a CNAME at your Railway URL.
 
 ---
 
@@ -205,9 +211,7 @@ squid-agent/
 
 ## Security Scanning
 
-SquidBay scans every source file for 14 categories of threats:
-
-Trackers & ad networks, prompt injection, code obfuscation, data exfiltration, credential harvesting, environment variable sniffing, supply chain attacks, file system attacks, crypto mining, hardcoded secrets, and more.
+SquidBay scans every source file for 14 categories of threats: trackers & ad networks, prompt injection, code obfuscation, data exfiltration, credential harvesting, environment variable sniffing, supply chain attacks, file system attacks, crypto mining, hardcoded secrets, and more.
 
 Your trust score is visible on the marketplace. Higher score = more trust = more transactions.
 
